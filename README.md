@@ -24,5 +24,3 @@ npm start
 ```
 
 Open `http://localhost:4200/` to view the demo.
-
-Run the app as written to see the collision. Both buttons use the storefront blue. Then uncomment `provideCssVarNamespacing(namespace)` in `src/main.ts` and reload the page. The storefront button stays blue, while the support widget button uses its intended purple fallback.
