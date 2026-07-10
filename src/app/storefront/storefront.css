@@ -1,0 +1,87 @@
+:host {
+  /* The storefront owns this generic design token. */
+  --primary-color: #007bff;
+
+  display: block;
+}
+
+.store {
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  border-radius: 1rem;
+  background: color-mix(in srgb, currentColor 8%, transparent);
+  box-shadow: 0 24px 80px hsl(0 0% 0% / 0.35);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+}
+
+.product {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.75fr) 1fr;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem;
+}
+
+.product__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.product__category {
+  margin: 0 0 0.4rem;
+  opacity: 0.7;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.product__description {
+  max-width: 42ch;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+.primary-button {
+  padding: 0.85rem 1.15rem;
+  border: 0;
+  border-radius: 0.65rem;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.primary-button:hover {
+  filter: brightness(1.15);
+}
+
+.primary-button:focus-visible {
+  outline: 2px solid;
+  outline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  .product {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+
+}

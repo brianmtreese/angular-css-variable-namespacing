@@ -1,0 +1,29 @@
+<section class="store">
+  <nav>
+    <strong>Northstar Supply</strong>
+    <span>Cart · {{ cartCount() }}</span>
+  </nav>
+
+  <div class="product">
+    <img
+      class="product__image"
+      src="/images/field-notes-backpack.png"
+      alt="Navy Field Notes Backpack"
+    >
+
+    <div>
+      <p class="product__category">Everyday carry</p>
+      <h2>Field Notes Backpack</h2>
+      <p class="product__description">
+        A durable navy canvas backpack with a padded laptop sleeve, roomy main compartment,
+        and quick-access front pocket.
+      </p>
+      <button class="primary-button" type="button" (click)="addToCart()">
+        Add to cart · $89
+      </button>
+    </div>
+  </div>
+
+  <!-- Imagine this selector is owned and deployed by another team. -->
+  <support-widget></support-widget>
+</section>

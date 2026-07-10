@@ -1,0 +1,39 @@
+:root {
+  color-scheme: dark;
+  --color-page: hsl(220 18% 10%);
+  --color-surface: hsl(222 28% 15%);
+  --color-surface-muted: hsl(222 24% 14%);
+  --color-border: hsl(215 18% 32%);
+  --color-text: hsl(0 0% 100%);
+  --color-text-muted: hsl(215 16% 72%);
+  --shadow-card: 0 24px 80px hsl(220 40% 2% / 0.35);
+
+  background:
+    radial-gradient(circle at top left, hsl(212 82% 28% / 0.28), transparent 24rem),
+    var(--color-page);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: transparent;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+main {
+  width: min(860px, calc(100% - 4rem));
+  margin: 0 auto;
+  padding: clamp(1rem, 5vw, 4rem) 0;
+}

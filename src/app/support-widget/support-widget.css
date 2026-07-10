@@ -1,0 +1,53 @@
+:host {
+  display: block;
+  padding: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  /* This page-level theme token intentionally remains shared. */
+  /* background: var(--color-surface-muted); */
+  background: var(--global--color-surface-muted);
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ownership {
+  display: block;
+  margin-bottom: 0.2rem;
+  opacity: 0.7;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0.4rem 0 0;
+  opacity: 0.7;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  /*
+   * This app expects its purple fallback. Without namespacing it instead
+   * inherits the storefront's generic --primary-color token.
+   */
+  background: var(--primary-color, #7c3aed);
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+button:focus-visible {
+  outline: 2px solid;
+  outline-offset: 3px;
+}

@@ -1,0 +1,13 @@
+<aside>
+  <div>
+    <span class="ownership">Need help?</span>
+    <strong>Acme Support</strong>
+    @if (open()) {
+      <p>Hi! What can we help you find?</p>
+    }
+  </div>
+
+  <button type="button" (click)="toggle()">
+    {{ open() ? 'Close' : 'Chat with us' }}
+  </button>
+</aside>
