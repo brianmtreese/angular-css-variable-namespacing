@@ -4,7 +4,7 @@
   border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);
   /* This page-level theme token intentionally remains shared. */
   /* background: var(--color-surface-muted); */
-  background: var(--global-color-surface-muted);
+  background: var(--global--color-surface-muted);
 }
 
 aside {
